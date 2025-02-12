@@ -7,7 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const faqs = [
   {
-    question: <>"Can you give a brief overview of this project?"</>,
+    question: "Can you give a brief overview of this project?",
     answer:
       "Reboost is a Chrome extension with two core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
   },
