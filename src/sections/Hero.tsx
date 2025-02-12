@@ -26,6 +26,8 @@ const Hero: FC = () => {
   const portraitWidth = useTransform(scrollYProgress, [0, 1], ["100%", "240%"]);
 
   useEffect(() => {
+    if (!titleScope.current) return;
+
     new SplitType(titleScope.current, {
       types: "lines,words",
       tagName: "span",
@@ -41,7 +43,7 @@ const Hero: FC = () => {
         delay: stagger(0.2),
       }
     );
-  }, []);
+  }, [titleScope, titleAnimate]);
 
   return (
     <section id="home">

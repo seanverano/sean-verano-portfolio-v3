@@ -2,6 +2,7 @@
 import { FC, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
+import Button from "@/components/Button";
 
 const faqs = [
   {
@@ -119,6 +120,28 @@ const ReboostPage: FC = () => {
           ))}
         </div>
       </div>
+      <a href="/" className="flex justify-center items-center mb-6">
+        <Button
+          variant="primary"
+          className="inline-flex items-center gap-4 text-xl"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-6 inline-block pr-2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+            />
+          </svg>
+          HOME
+        </Button>
+      </a>
     </section>
   );
 };

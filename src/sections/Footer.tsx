@@ -82,7 +82,7 @@ const Footer: FC = () => {
                     </div>
                   }
                 >
-                  CURIOUS? LET'S BUILD!
+                  CURIOUS? LET&apos;S BUILD!
                 </Button>
               </a>
             </div>
