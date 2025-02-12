@@ -49,7 +49,7 @@ const Hero: FC = () => {
     <section id="home">
       <div className="grid md:grid-cols-12 md:h-screen items-stretch sticky top-0">
         <div className="md:col-span-7 flex flex-col justify-center">
-          <div className="container !max-w-full mt-6">
+          <div className="container !max-w-full lg:mt-10">
             <h1 className="mt-40 md:mt-0 flex flex-col">
               <motion.span
                 initial={{ opacity: 0 }}

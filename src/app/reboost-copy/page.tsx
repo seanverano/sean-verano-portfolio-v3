@@ -3,83 +3,28 @@ import { FC, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import Button from "@/components/Button";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 const faqs = [
   {
     question: "What's a brief overview of this project?",
     answer:
-      "Reboost is a Chrome extension with two core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
+      "It depends on the complexity of the website and the scope of the project.",
   },
   {
     question:
       "What was my role in this project, and what technologies did I use to build it?",
     answer:
-      "I was the sole developer of this project, built using only React and Tailwind CSS, utilizing the Chrome Extensions API for alarms and storage, with no backend.",
+      "I follow a hands-on approach starting with project planning, building out the core features, and regular check-ins to make sure everything matches your needs.",
   },
   {
     question: "What challenges did I face, and how did I solve them?",
-    answer: (
-      <>
-        <p>
-          One of the main challenges was converting my React app into a Chrome
-          extension.
-        </p>
-        <p>
-          <br></br>I tackled this by reading documentation, but the most helpful
-          resources were from a blog and a video from a developer with
-          experience in creating Chrome extensions.
-        </p>
-        <p>
-          <br></br>The most recent challenge that I faced (since I'm still
-          maintaining and improving the app) was implementing an update that
-          initially took an intrusive approach using Chrome Permissions, which
-          could have hindered potential new users. I reverted the change and
-          found a better solution using React's Navigation Persistence.
-        </p>
-      </>
-    ),
+    answer:
+      "Yes, I work with clients globally and can accommodate different time zones for meetings and communication.",
   },
-
   {
-    question:
-      "Where can I try the extension, view the source code, or learn more?",
-    answer: (
-      <>
-        You can install Reboost from the{" "}
-        <a
-          href="https://chromewebstore.google.com/detail/reboost/bdlffpdkioakgjjpmgpboogfiaegbpgp"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          Chrome Web Store <FaExternalLinkAlt className="size-2" />
-        </a>
-        <br></br>
-        <br></br>
-        Explore the source code on{" "}
-        <a
-          href="https://github.com/seanverano/reboost"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          GitHub <FaExternalLinkAlt className="size-2" />
-        </a>
-        <br></br>
-        <br></br>
-        Or visit the official website at{" "}
-        <a
-          href="https://reboost.fyi/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          reboost.fyi <FaExternalLinkAlt className="size-2" />
-        </a>{" "}
-        for more details.
-      </>
-    ),
+    question: "Where can I view the demo and source code?",
+    answer:
+      "I have experience across various industries including technology, retail, hospitality, and professional services, bringing fresh perspectives to each project.",
   },
 ];
 
@@ -178,7 +123,7 @@ const ReboostPage: FC = () => {
       <a href="/" className="flex justify-center items-center mb-6">
         <Button
           variant="primary"
-          className="inline-flex items-center gap-4 text-lg"
+          className="inline-flex items-center gap-4 text-xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
