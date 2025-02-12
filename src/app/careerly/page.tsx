@@ -51,7 +51,7 @@ const faqs = [
 
   {
     question:
-      "Where can I try the extension, view the source code, or learn more?",
+      "Where can I try the platform, view the source code, or learn more?",
     answer: (
       <>
         You can try{" "}

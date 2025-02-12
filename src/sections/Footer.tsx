@@ -114,9 +114,45 @@ const Footer: FC = () => {
             </div>
           </div>
         </div>
-        <p className="py-16 text-white/30 text-sm">
-          Developed by Sean Dustin Verano &bull; All Rights Reserved &copy; 2025
-        </p>
+        <div className="flex flex-col">
+          <p className="pt-4 text-white/30 text-sm">
+            Developed by Sean Dustin Verano &bull; All Rights Reserved &copy;
+            2025
+          </p>
+          <div className="pb-4 text-white/30 text-sm">
+            Hero (Door) Image by{" "}
+            <a
+              className="hover:text-white"
+              href="https://unsplash.com/@luke_co?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Luke Collinson
+            </a>{" "}
+            on{" "}
+            <a
+              className="hover:text-white"
+              href="https://unsplash.com/photos/an-empty-room-with-a-light-coming-through-the-wall-_ix7oXz4kXo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unsplash
+            </a>
+          </div>
+          <div className="pb-4 text-white/30 text-sm">
+            This is the version 3 of my portfolio. Check out the previous
+            version
+            <a
+              className="hover:text-white"
+              href="https://seanverano.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              &nbsp;here
+            </a>
+            —albeit unfinished.
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -3,39 +3,85 @@ import { FC, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import Button from "@/components/Button";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const faqs = [
   {
-    question: "What's a brief overview of this project?",
+    question: "Can you give a brief overview of this project?",
     answer:
-      "It depends on the complexity of the website and the scope of the project.",
+      "Seoulbound is a K-Drama database app that lets you add shows to your watchlist and access details like cast, genre, and trailers. Powered by the TMDB API.",
   },
   {
-    question:
-      "What was my role in this project, and what technologies did I use to build it?",
-    answer:
-      "I follow a hands-on approach starting with project planning, building out the core features, and regular check-ins to make sure everything matches your needs.",
+    question: "What was your role, and what tools did you use?",
+    answer: (
+      <>
+        <p>I was the sole developer of this K-Drama database app.</p>
+        <p>
+          <br></br>For the tools, I used HTML, CSS, and JavaScript, integrating
+          the TMDB API to fetch and display drama details dynamically.
+        </p>
+      </>
+    ),
   },
   {
-    question: "What challenges did I face, and how did I solve them?",
-    answer:
-      "Yes, I work with clients globally and can accommodate different time zones for meetings and communication.",
+    question: "What challenges did you face, and how did you solve them?",
+    answer: (
+      <>
+        <p>
+          The biggest challenge was filtering the TMDB API data to fetch only
+          Korean dramas, as the API includes a broad range of TV shows from
+          different countries.
+        </p>
+        <p>
+          <br></br>To solve this, I thoroughly studied the TMDB documentation
+          and analyzed how similar apps handled filtering. By refining API
+          queries and leveraging specific parameters, I was able to accurately
+          retrieve only K-Dramas for the app.
+        </p>
+      </>
+    ),
   },
+
   {
-    question: "Where can I view the demo and source code?",
-    answer:
-      "I have experience across various industries including technology, retail, hospitality, and professional services, bringing fresh perspectives to each project.",
+    question: "Where can I try the app, view the source code, or learn more?",
+    answer: (
+      <>
+        Unfortunately, since this project is built using only the frontend, I
+        couldn't integrate an API key from TMDB due to security risks. As a
+        result, I didn't deploy it on a live site. However, I created a{" "}
+        <a
+          href="https://try-careerly.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
+        >
+          preview <FaExternalLinkAlt className="size-4" />
+        </a>{" "}
+        which you can check to see how the app works
+        <br></br>
+        <br></br>
+        Or explore the source code on{" "}
+        <a
+          href="https://github.com/seanverano/seoulbound"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
+        >
+          GitHub <FaExternalLinkAlt className="size-4" />
+        </a>
+      </>
+    ),
   },
 ];
 
-const ReboostPage: FC = () => {
+const SeoulboundPage: FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   return (
     <section>
       <div className="container mx-auto px-4 md:px-8 lg:px-16 mb-10 mt-6 md:mt-8 lg:mt-10">
         <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#8046F3] text-center mb-6">
-          Reboost
+          Seoulbound
         </h2>
         <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-lg">
           <iframe
@@ -76,7 +122,7 @@ const ReboostPage: FC = () => {
                   faqIndex === selectedIndex && "lg:px-8"
                 )}
               >
-                <div className="text-2xl md:text-3xl lg:text-4xl group-hover/faq:text-white transition-all duration-300 font-semibold">
+                <div className="text-2xl md:text-3xl lg:text-4xl group-hover/faq:text-white font-semibold transition-all duration-300">
                   {question}
                 </div>
                 <div
@@ -123,7 +169,7 @@ const ReboostPage: FC = () => {
       <a href="/" className="flex justify-center items-center mb-6">
         <Button
           variant="primary"
-          className="inline-flex items-center gap-4 text-xl"
+          className="inline-flex items-center gap-4 text-lg"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -146,4 +192,4 @@ const ReboostPage: FC = () => {
   );
 };
 
-export default ReboostPage;
+export default SeoulboundPage;

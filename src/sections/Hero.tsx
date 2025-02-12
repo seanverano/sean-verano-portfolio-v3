@@ -122,7 +122,7 @@ const Hero: FC = () => {
               <motion.div
                 initial={{ opacity: 0, y: "100%" }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2, delay: 3 }}
+                transition={{ duration: 2, delay: 3.5 }}
               >
                 <Button variant="text" className="pl-4 md:pl-0 lg:pl-0">
                   Check Resume
