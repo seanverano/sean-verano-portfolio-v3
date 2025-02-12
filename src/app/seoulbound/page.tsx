@@ -50,7 +50,7 @@ const faqs = [
         couldn&apos;t integrate an API key from TMDB due to security risks. As a
         result, I didn&apos;t deploy it on a live site. However, I created a{" "}
         <a
-          href="https://www.youtube.com/embed/75pAWxBe1UE"
+          href="https://www.youtube.com/watch?v=75pAWxBe1UE"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
@@ -87,7 +87,7 @@ const SeoulboundPage: FC = () => {
         <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://youtu.be/75pAWxBe1UE"
+            src="https://www.youtube.com/embed/75pAWxBe1UE"
             title="Project Preview"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
