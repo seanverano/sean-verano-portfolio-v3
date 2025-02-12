@@ -7,18 +7,18 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const faqs = [
   {
-    question: <>"What&apos;s a brief overview of this project?"</>,
+    question: <>"Can you give a brief overview of this project?"</>,
     answer:
       "Reboost is a Chrome extension with two core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
   },
   {
     question:
-      "What was my role in this project, and what technologies did I use to build it?",
+      "What was your role in this project, and what technologies did I use to build it?",
     answer:
       "I was the sole developer of this project, built using only React and Tailwind CSS, utilizing the Chrome Extensions API for alarms and storage, with no backend.",
   },
   {
-    question: "What challenges did I face, and how did I solve them?",
+    question: "What challenges did you face, and how did you solve them?",
     answer: (
       <>
         <p>
