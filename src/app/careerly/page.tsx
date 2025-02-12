@@ -92,7 +92,7 @@ const CareerlyPage: FC = () => {
         <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/watch?v=UxlkN8WpmL8"
+            src="https://www.youtube.com/embed/UxlkN8WpmL8"
             title="Project Preview"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
