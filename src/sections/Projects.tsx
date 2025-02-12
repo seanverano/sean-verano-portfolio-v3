@@ -11,10 +11,12 @@ const projects = [
   {
     name: "Seoulbound",
     image: proj1,
+    slug: "seoulbound",
   },
   {
     name: "Résumate",
     image: proj2,
+    slug: "resumate",
   },
   {
     name: "Reboost",
@@ -25,11 +27,13 @@ const projects = [
   {
     name: "BeyondTheMirror AI",
     image: proj4,
+    slug: "beyondthemirrorai",
   },
   {
     name: "Careerly",
     image: proj5,
     featured: true,
+    slug: "careerly",
   },
 ];
 

@@ -9,11 +9,10 @@ const faqs = [
   {
     question: "Can you give a brief overview of this project?",
     answer:
-      "Reboost is a Chrome extension with two core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
+      "Reboost is a Chrome extension with 2 core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
   },
   {
-    question:
-      "What was your role in this project, and what technologies did I use to build it?",
+    question: "What was your role, and what tools did you use?",
     answer:
       "I was the sole developer of this project, built using only React and Tailwind CSS, utilizing the Chrome Extensions API for alarms and storage, with no backend.",
   },
@@ -53,7 +52,7 @@ const faqs = [
           rel="noopener noreferrer"
           className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
         >
-          Chrome Web Store <FaExternalLinkAlt className="size-2" />
+          Chrome Web Store <FaExternalLinkAlt className="size-4" />
         </a>
         <br></br>
         <br></br>
@@ -64,7 +63,7 @@ const faqs = [
           rel="noopener noreferrer"
           className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
         >
-          GitHub <FaExternalLinkAlt className="size-2" />
+          GitHub <FaExternalLinkAlt className="size-4" />
         </a>
         <br></br>
         <br></br>
@@ -75,7 +74,7 @@ const faqs = [
           rel="noopener noreferrer"
           className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
         >
-          reboost.fyi <FaExternalLinkAlt className="size-2" />
+          reboost.fyi <FaExternalLinkAlt className="size-4" />
         </a>{" "}
         for more details.
       </>
@@ -131,7 +130,7 @@ const ReboostPage: FC = () => {
                   faqIndex === selectedIndex && "lg:px-8"
                 )}
               >
-                <div className="text-2xl md:text-3xl lg:text-4xl group-hover/faq:text-white transition-all duration-300 font-semibold">
+                <div className="text-2xl md:text-3xl lg:text-4xl group-hover/faq:text-white font-semibold transition-all duration-300">
                   {question}
                 </div>
                 <div
