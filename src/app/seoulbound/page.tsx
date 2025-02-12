@@ -50,7 +50,7 @@ const faqs = [
         couldn&apos;t integrate an API key from TMDB due to security risks. As a
         result, I didn&apos;t deploy it on a live site. However, I created a{" "}
         <a
-          href="https://youtu.be/75pAWxBe1UE"
+          href="https://www.youtube.com/watch?v=75pAWxBe1UE"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"

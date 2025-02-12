@@ -82,8 +82,8 @@ const ResumatePage: FC = () => {
         <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://youtu.be/0_D3G_Jgt7c"
-            title="YouTube video player"
+            src="https://www.youtube.com/watch?v=0_D3G_Jgt7c"
+            title="Project Preview"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
