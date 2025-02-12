@@ -50,17 +50,17 @@ const faqs = [
         couldn't integrate an API key from TMDB due to security risks. As a
         result, I didn't deploy it on a live site. However, I created a{" "}
         <a
-          href="https://try-careerly.vercel.app/"
+          href="https://youtu.be/75pAWxBe1UE"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
         >
           preview <FaExternalLinkAlt className="size-4" />
         </a>{" "}
-        which you can check to see how the app works
+        which you can check to see how the app works.
         <br></br>
         <br></br>
-        Or explore the source code on{" "}
+        You can also explore the source code on{" "}
         <a
           href="https://github.com/seanverano/seoulbound"
           target="_blank"
@@ -69,6 +69,7 @@ const faqs = [
         >
           GitHub <FaExternalLinkAlt className="size-4" />
         </a>
+        .
       </>
     ),
   },
@@ -86,8 +87,8 @@ const SeoulboundPage: FC = () => {
         <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/g8RL_s4DbIY"
-            title="YouTube video player"
+            src="https://youtu.be/75pAWxBe1UE"
+            title="Project Preview"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

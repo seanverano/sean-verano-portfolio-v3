@@ -55,7 +55,7 @@ const Hero: FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 ref={titleScope}
-                className="text-5xl md:text-7xl lg:text-8xl font-semibold"
+                className="text-5xl md:text-6xl lg:text-7xl font-semibold"
               >
                 Building premium and results driven products that create value
               </motion.span>
