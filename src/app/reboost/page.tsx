@@ -7,7 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const faqs = [
   {
-    question: "What's a brief overview of this project?",
+    question: "What&apos;s a brief overview of this project?",
     answer:
       "Reboost is a Chrome extension with two core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
   },
@@ -31,11 +31,11 @@ const faqs = [
           experience in creating Chrome extensions.
         </p>
         <p>
-          <br></br>The most recent challenge that I faced (since I'm still
+          <br></br>The most recent challenge that I faced (since I&apos;m still
           maintaining and improving the app) was implementing an update that
           initially took an intrusive approach using Chrome Permissions, which
           could have hindered potential new users. I reverted the change and
-          found a better solution using React's Navigation Persistence.
+          found a better solution using React&apos;s Navigation Persistence.
         </p>
       </>
     ),
