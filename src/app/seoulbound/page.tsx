@@ -48,7 +48,7 @@ const faqs = [
       <>
         Unfortunately, since this project is built using only the frontend, I
         couldn&apos;t integrate an API key from TMDB due to security risks. As a
-        result, I didn't deploy it on a live site. However, I created a{" "}
+        result, I didn&apos;t deploy it on a live site. However, I created a{" "}
         <a
           href="https://youtu.be/75pAWxBe1UE"
           target="_blank"
