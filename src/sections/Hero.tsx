@@ -23,7 +23,7 @@ const Hero: FC = () => {
     offset: ["start end", "end end"],
   });
 
-  const portraitWidth = useTransform(scrollYProgress, [0, 1], ["100%", "240%"]);
+  const portraitWidth = useTransform(scrollYProgress, [0, 1], ["80%", "240%"]);
 
   useEffect(() => {
     if (!titleScope.current) return;
@@ -124,9 +124,15 @@ const Hero: FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2, delay: 3.5 }}
               >
-                <Button variant="text" className="pl-4 md:pl-0 lg:pl-0">
-                  Check Resume
-                </Button>
+                <a
+                  href="/SeanDustinVerano_SoftwareDev_Resume_2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="text" className="pl-4 md:pl-0 lg:pl-0">
+                    Check Resume
+                  </Button>
+                </a>
               </motion.div>
             </div>
           </div>

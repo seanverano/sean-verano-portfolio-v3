@@ -150,7 +150,7 @@ const Footer: FC = () => {
             >
               &nbsp;here
             </a>
-            —albeit unfinished.
+            —albeit old and unfinished.
           </div>
         </div>
       </div>

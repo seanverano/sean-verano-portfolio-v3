@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Can you give a brief overview of this project?",
     answer:
-      "Reboost is a Chrome extension with 2 core features, a hydration tracker for logging and tracking water intake and also a reminder for setting custom break alerts.",
+      "Reboost is a Chrome extension with 2 core features, a hydration tracker for logging and tracking water intake and also a reminder system to set custom break alerts.",
   },
   {
     question: "What was your role, and what tools did you use?",
