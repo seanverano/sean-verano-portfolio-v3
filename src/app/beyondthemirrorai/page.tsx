@@ -86,7 +86,7 @@ const BeyondTheMirrorPage: FC = () => {
     <section>
       <div className="container mx-auto px-4 md:px-8 lg:px-16 mb-10 mt-6 md:mt-8 lg:mt-10">
         <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#8046F3] text-center mb-6">
-          BeyondTheMirror AI
+          Beyond The Mirror AI
         </h2>
         <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden rounded-lg shadow-lg">
           <iframe
