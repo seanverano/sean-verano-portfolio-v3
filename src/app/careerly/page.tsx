@@ -24,7 +24,8 @@ const faqs = [
         <p>
           <br></br>For the tools, our team used the MERN stack (MongoDB,
           Express, React, Node.js) and integrated 4 APIs (Google Gemini AI,
-          TomTom, Web Speech, and Serper) for the features.
+          TomTom, Web Speech, and Serper) for the features. The frontend is
+          deployed on Vercel, while the backend is hosted on Render.
         </p>
       </>
     ),

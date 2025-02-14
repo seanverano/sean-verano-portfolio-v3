@@ -141,7 +141,7 @@ const Header: FC = () => {
             <a
               href={href}
               key={label}
-              className="text-stone-200 border-t border-stone-800 last:border-b py-8 group/nav-item relative isolate"
+              className="text-stone-200 border-t border-stone-800 last:border-b py-8 group/nav-item relative isolate uppercase"
               onClick={(e) => handleNavItemClick(e, href)}
             >
               <div className="container !max-w-full flex items-center justify-between">
@@ -194,7 +194,7 @@ const Header: FC = () => {
                   relative 
                   group 
                   px-0 
-                  border-transparent hover:text-[#8046F3] transition-all duration-500"
+                  border-transparent hover:text-[#8046F3] transition-all duration-500 uppercase"
                   onClick={(e) => handleNavItemClick(e, href)}
                 >
                   <span className="relative">
