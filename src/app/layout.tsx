@@ -27,10 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* Google Analytics Tag so I can trac user engagements*/}
+        {/* Google Analytics Tag so I can track user engagements*/}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-K7V62E8KW5`}
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -38,7 +38,7 @@ export default function RootLayout({
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-YOUR_MEASUREMENT_ID');
+        gtag('config', 'G-K7V62E8KW5');
       `,
           }}
         />
