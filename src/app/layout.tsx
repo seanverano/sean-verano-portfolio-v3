@@ -27,6 +27,21 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* Google Analytics Tag so I can trac user engagements*/}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YOUR_MEASUREMENT_ID');
+      `,
+          }}
+        />
       </head>
       <body
         className={`antialiased bg-[#ECEFEC] text-stone-900 ${archivo.variable} font-sans`}
