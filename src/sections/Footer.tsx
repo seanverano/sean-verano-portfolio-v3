@@ -114,12 +114,12 @@ const Footer: FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
-          <p className="pt-4 text-white/30 text-sm">
+        <div className="flex flex-col justify-end">
+          <p className="pt-2 text-white/30 text-sm justify-end">
             Developed by Sean Dustin Verano &bull; All Rights Reserved &copy;
             2025
           </p>
-          <div className="pb-4 text-white/30 text-sm">
+          <div className="pb-2 text-white/30 text-sm">
             Hero (Door) Image by{" "}
             <a
               className="hover:text-white"
@@ -138,19 +138,6 @@ const Footer: FC = () => {
             >
               Unsplash
             </a>
-          </div>
-          <div className="pb-4 text-white/30 text-sm">
-            This is the version 3 of my portfolio. Check out the previous
-            version
-            <a
-              className="hover:text-white"
-              href="https://seanverano.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              &nbsp;here
-            </a>
-            —albeit old and unfinished.
           </div>
         </div>
       </div>

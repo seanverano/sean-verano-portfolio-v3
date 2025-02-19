@@ -226,7 +226,7 @@ const Header: FC = () => {
             </div>
             <div className="flex items-center gap-4">
               <div
-                className="size-11 border border-transparent rounded-full inline-flex items-center justify-center bg-[#8046F3]"
+                className="size-9 border border-transparent rounded-full inline-flex items-center justify-center bg-[#8046F3]"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <svg
