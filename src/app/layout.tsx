@@ -12,7 +12,7 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "Sean Dustin Verano | Portfolio",
   description:
-    "Full-stack MERN specialist building premium and results-driven products that create value.",
+    "Full-stack MERN specialist building results-driven products and services that create value.",
   icons: {
     icon: [
       { url: "/favicon.ico" },

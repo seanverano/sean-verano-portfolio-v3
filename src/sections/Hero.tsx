@@ -57,7 +57,7 @@ const Hero: FC = () => {
                 ref={titleScope}
                 className="text-5xl md:text-6xl lg:text-7xl font-semibold"
               >
-                Building premium and results driven products that create value
+                Building results driven products and services that create value
               </motion.span>
               <motion.div
                 initial={{ opacity: 0, y: "100%" }}
