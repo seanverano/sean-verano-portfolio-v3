@@ -5,7 +5,6 @@ import heroImage from "@/assets/images/hero-image.jpg";
 import Image from "next/image";
 import Button from "@/components/Button";
 import SplitType from "split-type";
-import Link from "next/link";
 import {
   useAnimate,
   motion,
