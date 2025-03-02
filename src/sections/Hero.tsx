@@ -77,7 +77,11 @@ const Hero: FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2, delay: 3 }}
               >
-                <Link href="/#intro">
+                <a
+                  href="/SeanDustinVerano_SoftwareDev_Resume_2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     variant="primary"
                     iconAfter={
@@ -115,22 +119,7 @@ const Hero: FC = () => {
                       </div>
                     }
                   >
-                    <span>Learn More</span>
-                  </Button>
-                </Link>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: "100%" }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2, delay: 3.5 }}
-              >
-                <a
-                  href="/SeanDustinVerano_SoftwareDev_Resume_2025.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="text" className="pl-4 md:pl-0 lg:pl-0">
-                    Check Resume
+                    <span>Check Resume</span>
                   </Button>
                 </a>
               </motion.div>

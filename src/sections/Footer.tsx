@@ -114,12 +114,8 @@ const Footer: FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-end">
-          <p className="pt-2 text-white/30 text-sm justify-end">
-            Developed by Sean Dustin Verano &bull; All Rights Reserved &copy;
-            2025
-          </p>
-          <div className="pb-2 text-white/30 text-sm">
+        <div className="flex flex-col">
+          <div className=" text-white/30 text-sm">
             Hero (Door) Image by{" "}
             <a
               className="hover:text-white"
@@ -138,6 +134,9 @@ const Footer: FC = () => {
             >
               Unsplash
             </a>
+            <p className="pb-2 text-white/30 text-sm">
+              Developed with 💜 by SDV &bull; All Rights Reserved &copy; 2025
+            </p>
           </div>
         </div>
       </div>
