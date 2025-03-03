@@ -5,6 +5,7 @@ import Button from "@/components/Button";
 import { useAnimate, useInView, stagger } from "motion/react";
 import SplitType from "split-type";
 import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer: FC = () => {
   const [scope, animate] = useAnimate();
@@ -109,6 +110,14 @@ const Footer: FC = () => {
                   className="flex items-center gap-3 text-lg md:text-2xl lg:text-3xl  text-white hover:text-[#8046F3] transition-colors"
                 >
                   <FaLinkedin className="text-3xl" /> LinkedIn
+                </a>
+                <a
+                  href="https://x.com/_seanverano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-lg md:text-2xl lg:text-3xl  text-white hover:text-[#8046F3] transition-colors"
+                >
+                  <FaSquareXTwitter className="text-3xl" /> X/Twitter
                 </a>
               </div>
             </div>

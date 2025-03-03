@@ -9,9 +9,16 @@ import Link from "next/link";
 
 const projects = [
   {
-    name: "Seoulbound",
-    image: proj1,
-    slug: "seoulbound",
+    name: "Reboost",
+    image: proj3,
+    featured: true,
+    slug: "reboost",
+  },
+  {
+    name: "Careerly",
+    image: proj5,
+    featured: true,
+    slug: "careerly",
   },
   {
     name: "Résumate",
@@ -19,21 +26,14 @@ const projects = [
     slug: "resumate",
   },
   {
-    name: "Reboost",
-    image: proj3,
-    featured: true,
-    slug: "reboost",
-  },
-  {
     name: "BeyondTheMirror AI",
     image: proj4,
     slug: "beyondthemirrorai",
   },
   {
-    name: "Careerly",
-    image: proj5,
-    featured: true,
-    slug: "careerly",
+    name: "Seoulbound",
+    image: proj1,
+    slug: "seoulbound",
   },
 ];
 
