@@ -5,9 +5,11 @@ const Button = (
   props: {
     variant: "primary" | "secondary" | "text";
     iconAfter?: ReactNode;
+    iconBefore?: ReactNode;
   } & ButtonHTMLAttributes<HTMLButtonElement>
 ) => {
-  const { className, children, variant, iconAfter, ...rest } = props;
+  const { className, children, variant, iconAfter, iconBefore, ...rest } =
+    props;
   return (
     <button
       className={twMerge(
@@ -22,6 +24,7 @@ const Button = (
       )}
       {...rest}
     >
+      {iconBefore && <span>{iconBefore}</span>}
       <span>{children}</span>
       {iconAfter && <span>{iconAfter}</span>}
     </button>

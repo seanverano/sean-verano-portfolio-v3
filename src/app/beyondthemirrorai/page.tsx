@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import Button from "@/components/Button";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -171,28 +172,94 @@ const BeyondTheMirrorPage: FC = () => {
           ))}
         </div>
       </div>
-      <a href="/" className="flex justify-center items-center mb-6">
-        <Button
-          variant="primary"
-          className="inline-flex items-center gap-4 text-lg"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-6 inline-block pr-2"
+      <div className="flex justify-center gap-2">
+        <a href="/" className="flex justify-center items-center mb-6">
+          <Button
+            variant="primary"
+            className="inline-flex items-center text-lg"
+            iconBefore={
+              <div className="size-5 overflow-hidden">
+                <div className="w-10 h-5 flex group-hover/button:-translate-x-1/2 transition-transform duration-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </div>
+              </div>
+            }
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-            />
-          </svg>
-          HOME
-        </Button>
-      </a>
+            HOME
+          </Button>
+        </a>
+        <Link href="/seoulbound">
+          <div className="flex justify-center items-center mb-6">
+            <Button
+              variant="primary"
+              className="inline-flex items-center text-lg"
+              iconAfter={
+                <div className="size-5 overflow-hidden">
+                  <div className="w-10 h-5 flex group-hover/button:-translate-x-1/2 transition-transform duration-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              }
+            >
+              NEXT
+            </Button>
+          </div>
+        </Link>
+      </div>
     </section>
   );
 };
