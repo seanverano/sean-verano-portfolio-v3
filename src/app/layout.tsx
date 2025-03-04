@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Full-stack MERN specialist building results-driven products and services that create value.",
     url: "https://seanverano.com",
-    siteName: "Sean Dustin Verano Portfolio",
+    siteName: "Sean Dustin Verano | Portfolio",
     images: [
       {
         url: "https://i.imgur.com/PuUUIGx.png",

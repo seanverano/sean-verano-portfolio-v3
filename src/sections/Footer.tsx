@@ -144,7 +144,16 @@ const Footer: FC = () => {
               Unsplash
             </a>
             <p className="pb-2 text-white/30 text-sm">
-              Developed with 💜 by SDV &bull; All Rights Reserved &copy; 2025
+              Developed with 💜 by{" "}
+              <a
+                href="https://seanverano.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#B066FF]/40 font-semibold mr-1 hover:text-white/30"
+              >
+                SDV
+              </a>
+              &copy; 2025
             </p>
           </div>
         </div>
