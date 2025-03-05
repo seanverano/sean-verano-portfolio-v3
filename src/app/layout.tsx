@@ -69,7 +69,7 @@ export default function RootLayout({
         <meta property="og:title" content="Sean Dustin Verano | Portfolio" />
         <meta
           property="og:description"
-          content="Full-stack MERN specialist building results-driven products and services that create value."
+          content="Full-Stack Software Developer building results-driven products and services that create value."
         />
         <meta property="og:image" content="https://i.imgur.com/2UGkQcu.png" />
         <meta property="og:url" content="https://seanverano.com" />
