@@ -3,8 +3,17 @@
 import { FC, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScroll, useTransform } from "framer-motion";
-import { FaReact, FaNodeJs, FaGitAlt, FaAws } from "react-icons/fa";
 import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaAws,
+  FaDocker,
+  FaPython,
+} from "react-icons/fa";
+import {
+  SiPostgresql,
+  SiVercel,
   SiMongodb,
   SiNextdotjs,
   SiTypescript,
@@ -26,7 +35,9 @@ const technologies = [
     name: "Backend",
     list: [
       { icon: FaNodeJs, name: "Node.js" },
+      { icon: FaPython, name: "Python" },
       { icon: SiExpress, name: "Express" },
+      { icon: SiPostgresql, name: "Express" },
       { icon: SiMongodb, name: "MongoDB" },
     ],
   },
@@ -35,6 +46,8 @@ const technologies = [
     list: [
       { icon: FaGitAlt, name: "Git" },
       { icon: FaAws, name: "AWS" },
+      { icon: FaDocker, name: "Docker" },
+      { icon: SiVercel, name: "Vercel" },
     ],
   },
 ];

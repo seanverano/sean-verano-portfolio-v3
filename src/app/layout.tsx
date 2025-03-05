@@ -12,7 +12,7 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "Sean Dustin Verano | Portfolio",
   description:
-    "Full-stack MERN specialist building results-driven products and services that create value.",
+    "Full-Stack Software Developer  specialist building results-driven products and services that create value.",
   openGraph: {
     title: "Sean Dustin Verano | Portfolio",
     description:
@@ -58,11 +58,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta
           name="description"
-          content="Full-stack MERN specialist building results-driven products and services that create value."
+          content="Full-Stack Software Developer specialist building results-driven products and services that create value."
         />
         <meta
           name="keywords"
-          content="Full-stack developer, MERN, React, Node.js, MongoDB, JavaScript, Portfolio"
+          content="Full-stack developer, React, Node.js, MongoDB, JavaScript, Python, SQL Portfolio"
         />
         <meta name="author" content="Sean Dustin Verano" />
 

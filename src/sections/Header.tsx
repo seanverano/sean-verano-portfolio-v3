@@ -216,7 +216,7 @@ const Header: FC = () => {
             <div>
               <a
                 href="/"
-                className="flex items-center text-xs font-bold text-[#1C1917]"
+                className="flex items-center text-sm font-bold text-[#1C1917]"
               >
                 <span className="text-[#8046F3] flex flex-col">
                   <span>SEAN&nbsp;DUSTIN&nbsp;VERANO</span>
