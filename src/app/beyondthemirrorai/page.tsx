@@ -25,7 +25,7 @@ const faqs = [
           <br></br>For the tools, I used React, Tailwind CSS, and shadcn/ui for
           the frontend, and Node.js, Express, and MongoDB for the backend. For
           integrating the AI, I got my API key from Google Gemini and used the
-          Web Speech API to transform users' spoken answers into text so the AI
+          Web Speech API to transform users spoken answers into text so the AI
           can process the data.
         </p>
       </>
