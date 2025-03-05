@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sean Dustin Verano | Portfolio",
     description:
-      "Full-stack MERN specialist building results-driven products and services that create value.",
+      "Full-Stack Software Developer building results-driven products and services that create value.",
     url: "https://seanverano.com",
     siteName: "Sean Dustin Verano | Portfolio",
     images: [
       {
-        url: "https://i.imgur.com/PuUUIGx.png",
+        url: "https://i.imgur.com/2UGkQcu.png",
         alt: "Sean Dustin Verano Portfolio Preview",
       },
     ],
@@ -71,7 +71,7 @@ export default function RootLayout({
           property="og:description"
           content="Full-stack MERN specialist building results-driven products and services that create value."
         />
-        <meta property="og:image" content="https://i.imgur.com/PuUUIGx.png" />
+        <meta property="og:image" content="https://i.imgur.com/2UGkQcu.png" />
         <meta property="og:url" content="https://seanverano.com" />
         <meta property="og:type" content="website" />
         {/* Google Analytics Tag so I can track user engagements*/}
