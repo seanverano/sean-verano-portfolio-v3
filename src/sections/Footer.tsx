@@ -144,7 +144,7 @@ const Footer: FC = () => {
               Unsplash
             </a>
             <p className="pb-2 text-white/30 text-sm">
-              Developed with 💜 by{" "}
+              Built with 💜 by{" "}
               <a
                 href="https://seanverano.com"
                 target="_blank"

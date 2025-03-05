@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import Button from "@/components/Button";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiGithub, FiYoutube, FiGlobe } from "react-icons/fi";
 import Link from "next/link";
 
 const faqs = [
@@ -24,7 +24,9 @@ const faqs = [
         <p>
           <br></br>For the tools, I used React, Tailwind CSS, and shadcn/ui for
           the frontend, and Node.js, Express, and MongoDB for the backend. For
-          integrating the AI, I got my API key from Google Gemini.
+          integrating the AI, I got my API key from Google Gemini and used the
+          Web Speech API to transform users' spoken answers into text so the AI
+          can process the data.
         </p>
       </>
     ),
@@ -43,38 +45,6 @@ const faqs = [
           turned out to be the best decision! It significantly sped up my
           development process and made styling much more efficient.
         </p>
-      </>
-    ),
-  },
-
-  {
-    question: "Where can I try the app, view the source code, or learn more?",
-    answer: (
-      <>
-        Unfortunately, as this is a full-stack project, I had to take down the
-        live site for now due to backend security concerns and maintenance.
-        However, I created a{" "}
-        <a
-          href="https://youtu.be/oSCmyd1bWgQ"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          preview <FaExternalLinkAlt className="size-4" />
-        </a>{" "}
-        which you can check to see how the app works.
-        <br></br>
-        <br></br>
-        You can also explore the source code on{" "}
-        <a
-          href="https://github.com/seanverano/beyond-the-mirror"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          GitHub <FaExternalLinkAlt className="size-4" />
-        </a>
-        .
       </>
     ),
   },
@@ -98,6 +68,50 @@ const BeyondTheMirrorPage: FC = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+        </div>
+        <div className="flex gap-4 mt-12 justify-center items-center">
+          <div className="flex flex-col items-center">
+            <a
+              href="https://github.com/seanverano/beyond-the-mirror"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiGithub className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Source Code
+            </span>
+          </div>
+          <div className="flex flex-col items-center">
+            <a
+              href="https://www.youtube.com/watch?v=oSCmyd1bWgQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiYoutube className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Preview
+            </span>
+          </div>
+          <div className="flex flex-col items-center">
+            <a
+              href="https://beyond-the-mirror.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiGlobe className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Official Site
+            </span>
+          </div>
         </div>
       </div>
       <div className="container mb-6">

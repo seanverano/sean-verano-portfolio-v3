@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import Button from "@/components/Button";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiGithub, FiChrome, FiGlobe } from "react-icons/fi";
 import Link from "next/link";
 
 const faqs = [
@@ -40,47 +40,6 @@ const faqs = [
       </>
     ),
   },
-
-  {
-    question:
-      "Where can I try the extension, view the source code, or learn more?",
-    answer: (
-      <>
-        You can install Reboost from the{" "}
-        <a
-          href="https://chromewebstore.google.com/detail/reboost/bdlffpdkioakgjjpmgpboogfiaegbpgp"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          Chrome Web Store <FaExternalLinkAlt className="size-4" />
-        </a>
-        <br></br>
-        <br></br>
-        Explore the source code on{" "}
-        <a
-          href="https://github.com/seanverano/reboost"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          GitHub <FaExternalLinkAlt className="size-4" />
-        </a>
-        <br></br>
-        <br></br>
-        Or visit the official website at{" "}
-        <a
-          href="https://reboost.fyi/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          reboost.fyi <FaExternalLinkAlt className="size-4" />
-        </a>{" "}
-        for more details.
-      </>
-    ),
-  },
 ];
 
 const ReboostPage: FC = () => {
@@ -102,7 +61,54 @@ const ReboostPage: FC = () => {
             allowFullScreen
           ></iframe>
         </div>
+        <div className="flex gap-4 mt-12 justify-center items-center">
+          <div className="flex flex-col items-center">
+            <a
+              href="https://github.com/seanverano/reboost"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiGithub className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Source Code
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <a
+              href="https://chromewebstore.google.com/detail/reboost/bdlffpdkioakgjjpmgpboogfiaegbpgp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiChrome className="text-xl md:text-3xl text-[#8046F3] hover:text-white group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Chrome Store
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <a
+              href="https://reboost.fyi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiGlobe className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Official Site
+            </span>
+          </div>
+        </div>
       </div>
+
       <div className="container mb-6">
         <div className="mt-10 md:mt-16 lg:mt-20 cursor-pointer">
           {faqs.map(({ question, answer }, faqIndex) => (

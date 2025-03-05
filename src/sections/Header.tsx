@@ -177,7 +177,7 @@ const Header: FC = () => {
                 href="/"
                 className="flex items-center text-xl font-bold text-[#1C1917]"
               >
-                <span className="text-[#8046F3] text-lg flex flex-col items-start mt-4">
+                <span className="text-[#8046F3] flex flex-col items-start mt-4">
                   <span>SEAN&nbsp;DUSTIN&nbsp;VERANO</span>
                   <span>Full&nbsp;Stack&nbsp;Developer</span>
                 </span>
@@ -216,7 +216,7 @@ const Header: FC = () => {
             <div>
               <a
                 href="/"
-                className="flex items-center text-xl font-bold text-[#1C1917]"
+                className="flex items-center text-xs font-bold text-[#1C1917]"
               >
                 <span className="text-[#8046F3] flex flex-col">
                   <span>SEAN&nbsp;DUSTIN&nbsp;VERANO</span>

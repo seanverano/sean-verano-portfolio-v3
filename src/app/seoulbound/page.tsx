@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import Button from "@/components/Button";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiGithub, FiYoutube, FiGlobe } from "react-icons/fi";
 import Link from "next/link";
 
 const faqs = [
@@ -42,38 +42,6 @@ const faqs = [
       </>
     ),
   },
-
-  {
-    question: "Where can I try the app, view the source code, or learn more?",
-    answer: (
-      <>
-        Unfortunately, since this project is built using only the frontend, I
-        couldn&apos;t integrate an API key from TMDB due to security risks. As a
-        result, I didn&apos;t deploy it on a live site. However, I created a{" "}
-        <a
-          href="https://www.youtube.com/watch?v=75pAWxBe1UE"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          preview <FaExternalLinkAlt className="size-4" />
-        </a>{" "}
-        which you can check to see how the app works.
-        <br></br>
-        <br></br>
-        You can also explore the source code on{" "}
-        <a
-          href="https://github.com/seanverano/seoulbound"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#8046F3] font-semibold inline-flex items-center gap-2 hover:text-white"
-        >
-          GitHub <FaExternalLinkAlt className="size-4" />
-        </a>
-        .
-      </>
-    ),
-  },
 ];
 
 const SeoulboundPage: FC = () => {
@@ -94,6 +62,50 @@ const SeoulboundPage: FC = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+        </div>
+        <div className="flex gap-4 mt-12 justify-center items-center">
+          <div className="flex flex-col items-center">
+            <a
+              href="https://github.com/seanverano/seoulbound"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiGithub className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Source Code
+            </span>
+          </div>
+          <div className="flex flex-col items-center">
+            <a
+              href="https://www.youtube.com/watch?v=75pAWxBe1UE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiYoutube className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Preview
+            </span>
+          </div>
+          <div className="flex flex-col items-center">
+            <a
+              href="https://seoulbound.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 size-12 md:size-16 inline-flex items-center justify-center rounded-full hover:bg-[#8046F3] border-[#8046F3] group transition-all duration-500"
+            >
+              <FiGlobe className="text-xl md:text-3xl text-[#8046F3] group-hover:text-white" />
+            </a>
+
+            <span className="text-[#8046F3] mt-2 text-base md:text-lg">
+              Official Site
+            </span>
+          </div>
         </div>
       </div>
       <div className="container mb-6">
