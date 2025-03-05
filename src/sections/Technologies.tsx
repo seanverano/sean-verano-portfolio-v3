@@ -19,12 +19,18 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiExpress,
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
 } from "react-icons/si";
 
 const technologies = [
   {
     name: "Frontend",
     list: [
+      { icon: SiHtml5, name: "HTML" },
+      { icon: SiCss3, name: "CSS" },
+      { icon: SiJavascript, name: "Javascript" },
       { icon: FaReact, name: "React" },
       { icon: SiNextdotjs, name: "Next.js" },
       { icon: SiTypescript, name: "TypeScript" },
@@ -37,7 +43,7 @@ const technologies = [
       { icon: FaNodeJs, name: "Node.js" },
       { icon: FaPython, name: "Python" },
       { icon: SiExpress, name: "Express" },
-      { icon: SiPostgresql, name: "Express" },
+      { icon: SiPostgresql, name: "PostgreSQL" },
       { icon: SiMongodb, name: "MongoDB" },
     ],
   },
